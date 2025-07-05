@@ -1,0 +1,349 @@
+.header {
+    padding: 20px 10%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header>p {
+    margin: 0;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-size: 3rem;
+    font-style: normal;
+    cursor: pointer;
+}
+
+.header>.login-btn {
+    margin-left: auto;
+    margin-right: 2%;
+}
+
+.header>button {
+    padding: 1% 2%;
+    border-radius: 20px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    font-family: "Asap", sans-serif;
+    font-size: larger;
+    font-weight: 900;
+}
+
+button:hover {
+    background-color: #a6e226;
+    /* light hover */
+}
+
+.hero {
+    margin: 5%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: center;
+
+}
+
+.hero>p {
+    font-size: 1.5rem;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #051937 0%, #26a0da 51%, #314755 100%);
+    transition: 0.5s;
+    background-size: 200% auto;
+    box-shadow: 0 0 5px #051937;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    font-family: "Asap", sans-serif;
+    font-size: large;
+    font-weight: 900;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.landing {
+    height: 100vh;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    border-radius: 0 0 5% 5%;
+    color: black;
+    box-shadow: 0 3px 3px #064367;
+}
+
+body {
+    margin: 0;
+}
+
+h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 5rem;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bolder;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 4rem;
+    margin: 0;
+}
+
+h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 400;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+p {
+    font-family: "Asap", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.features {
+    padding: 5% 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.features>h2 {
+    color: #00bf72;
+    text-align: center;
+    text-shadow: 0 0 5px #00bf72;
+}
+
+.features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.features-item {
+    background-image: linear-gradient(to right top, #00bf72, #27c680, #3ccd8e, #4dd49c, #5edba9);
+    /*background-image: linear-gradient(to right top, #00bf72, #3ccb64, #61d753, #84e23b, #a8eb12);
+    /* background-color: #00bf72;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 380px;
+    border-radius: 10px;
+    padding: 20px;
+    border: none;
+    box-shadow: 0 0 15px #12bc78;
+    color: black;
+}
+
+.features-item>p {
+    font-family: "Asap", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.material-symbols-outlined {
+    font-size: 54px;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+    border-radius: 10px;
+    margin: 5%;
+    gap: 10px;
+    padding: 40px;
+    box-shadow: 0 0 10px #12bc78;
+    background-image: linear-gradient(to right top, #00bf72, #27c680, #3ccd8e, #4dd49c, #5edba9);
+    color: black;
+}
+
+.steps>h2 {
+    text-align: center;
+    text-shadow: 0 0 3px #051937;
+}
+
+.steps-list>div {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.steps-list>div>p {
+    text-align: center;
+}
+
+.steps-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.testimonials {
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    ;
+    background-color: #808080;
+    color: black;
+    border-radius: 5% 5% 0 0;
+}
+
+.testimonial-grid>p {
+    font-family: cursive;
+    background-color: darkgray;
+    padding: 2%;
+    font-style: italic;
+    border-radius: 20px;
+    box-shadow: 0 0 5px black;
+    border: 1px solid black;
+}
+
+footer {
+    background-color: #051937;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5%;
+}
+
+.footer-links>a {
+    color: white;
+}
+
+footer>p {
+    text-align: center;
+    font-size: large;
+    color: whitesmoke;
+    margin: 0;
+    padding: 20px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 500px;
+    text-align: center;
+}
+
+.modal-content>h2 {
+    font-size: xx-large;
+    color: black;
+}
+
+.modal-content>a>button {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.modal-content>form>* {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.close {
+    text-align: center;
+    color: gray;
+    cursor: pointer;
+    user-select: none;
+    font-size: 32px;
+}
+
+.switch-text {
+    color: grey;
+    font-size: large;
+}
+
+.error{
+    color: red;
+    font-size: small;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+@media (max-width:620px) {
+    h1 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2.5rem;
+    margin: 0;
+    text-align: center;
+    text-shadow: 0 0 50px #051937;
+}
+p {
+    font-family: "Asap", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+.hero>p {
+    font-size: 1.4rem;
+    margin: 30px 0px;
+}
+h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: bolder;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+.features-item{
+    margin: 15px;
+}
+    
+}
