@@ -274,6 +274,10 @@ footer>p {
     text-align: center;
 }
 
+.modal-content>p{
+    font-size:24px;
+}
+
 .modal-content>h2 {
     font-size: xx-large;
     color: black;
