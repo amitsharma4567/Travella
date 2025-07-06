@@ -3,6 +3,7 @@ import bodyParser from "body-parser";
 import pg from "pg";
 
 import env from "dotenv";
+env.config();
 
 import bcrypt from "bcrypt";
 import passport from "passport";
@@ -13,17 +14,17 @@ const port = 3000;
 
 const saltRounds = 10;
 
-env.config();
+
 app.use(passport.initialize());
 
 const db = new pg.Client({
   user: process.env.USER,
   host: process.env.HOST,
   database: process.env.DB,
-  password: process.env.PWD,
+  password: process.env.DBPWD,
   port: process.env.PORT,
   ssl: {
-    rejectUnauthorized: false, // required for Render SSL
+    rejectUnauthorized: false, 
   },
 });
 
