@@ -14,7 +14,7 @@ body {
 }
 
 body {
-  
+  height:85vh;
   background: #21252b;
   font-family: "Roboto", sans-serif;
 }
@@ -98,7 +98,6 @@ button:hover {
     -webkit-flex-flow: row wrap;
     -ms-flex-flow: row wrap;
     flex-flow: row wrap;
-    height: auto;
     padding: 4rem 1rem 1rem;
   }
 
