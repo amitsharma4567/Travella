@@ -18,11 +18,11 @@ const saltRounds = 10;
 app.use(passport.initialize());
 
 const db = new pg.Client({
-  user: process.env.USER,
-  host: process.env.HOST,
-  database: process.env.DB,
-  password: process.env.DBPWD,
-  port: process.env.PORT,
+  user: process.env.DB_USER,
+  host: process.env.DB_HOST,
+  database: process.env.DB_FULL,
+  password: process.env.DB_PWD,
+  port: process.env.DB_PORT,
   ssl: {
     rejectUnauthorized: false, 
   },
