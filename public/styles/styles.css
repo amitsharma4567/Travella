@@ -345,5 +345,9 @@ h2 {
 .features-item{
     margin: 15px;
 }
+
+.landing{
+    height: 85vh;
+}
     
 }
