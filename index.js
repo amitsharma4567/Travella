@@ -45,11 +45,11 @@ passport.use(new GoogleStrategy({
     const email = profile.email;
     const username = profile.displayName;
 
-    // Check if this email already exists
+    // check if this email already exists
     const result = await db.query("SELECT * FROM families WHERE email = $1", [email]);
 
     if (result.rows.length === 0) {
-      //  It's a signup via Google — create the user with no password
+      //  it's a signup via Google create the user with no password
       const insertResult = await db.query(
         "INSERT INTO families (email, hashedPwd, username) VALUES ($1, $2, $3) RETURNING *",
         [email, null, username]
@@ -57,7 +57,7 @@ passport.use(new GoogleStrategy({
       currFamilyId = insertResult.rows[0].id;
       console.log("New Google signup:", username);
     } else {
-      // Already registered — allow login
+      // already registered allow login
       currFamilyId = result.rows[0].id;
       console.log(" Google login:", username);
     }
@@ -86,7 +86,7 @@ app.get("/auth/google/callback", (req, res, next) => {
       });
     }
 
-    //  Google login/signup success
+    //  google login/signup success
     res.redirect("/dashboard");
   })(req, res, next);
 });
@@ -135,7 +135,7 @@ app.post("/signup", async (req, res) => {
     const checkResult = await db.query("SELECT * FROM families WHERE email = $1", [email]);
 
     if (checkResult.rows.length > 0) {
-      // Email already exists
+      // email already exists
       return res.redirect("/?error=taken&show=signup");
     }
 
